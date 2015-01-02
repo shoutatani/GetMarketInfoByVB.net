@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GetMarketInfo
+</name>
+</assembly>
+<members>
+<member name="P:GetMarketInfo.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:GetMarketInfo.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:GetMarketInfo.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:GetMarketInfo.SQLiteDB.openSQLiteDatabase(System.String)">
+	<summary>
+ open SQLite database in current folder with the database name 
+ </summary>
+	<param name="aDBName">databasename</param>
+	<returns>success or failure</returns>
+</member><member name="M:GetMarketInfo.SQLiteDB.closeSQLiteDatabase">
+	<summary>
+ close database
+ </summary>
+	<returns>success or failure</returns>
+</member><member name="M:GetMarketInfo.SQLiteDB.IsExistTable(System.String,System.String)">
+	<summary>
+ check the table,if not exist and create command is defined,create the table
+ </summary>
+	<param name="aTableName">table name</param>
+	<param name="aCreateCmd">create command</param>
+	<returns>success or failure</returns>
+</member><member name="M:GetMarketInfo.SQLiteDB.UpdateDataTable(System.String,System.Data.DataTable)">
+	<summary>
+ update the table with the datatable
+ </summary>
+	<param name="aTableName">table name</param>
+	<param name="_dtCalData">target datatable</param>
+	<returns>success or failure</returns>
+</member><member name="M:GetMarketInfo.YahooFinance.getEconomicCalendar(OpenQA.Selenium.IWebDriver,System.Data.DataTable,System.Windows.Forms.ProgressBar)">
+	<summary>
+ do crawling and set the data to the datatable.
+ </summary>
+	<param name="_driver">use this driver to crawling</param>
+	<param name="_CalDataTable">datatable for updating the db</param>
+	<param name="_formsBar">if you use the progressbar,pass the bar</param>
+	<returns>success or failure</returns>
+</member><member name="M:GetMarketInfo.YahooFinance.login(OpenQA.Selenium.IWebDriver)">
+	<summary>
+ open the site
+ </summary>
+	<param name="_aDriver">use this driver to crawling</param>
+	<returns>success or failure</returns>
+</member><member name="M:GetMarketInfo.YahooFinance.getSettings">
+	<summary>
+ get settings from xml file
+ </summary>
+	<returns>success or failure</returns>
+</member><member name="M:GetMarketInfo.YahooFinance.createDataTable">
+	<summary>
+ create datatable for crawling
+ </summary>
+	<returns>defined datatable</returns>
+</member>
+</members>
+</doc>
